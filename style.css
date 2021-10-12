@@ -1,0 +1,357 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url(bg.jpg);
+}
+
+/* Navigation Bar */
+header{
+    position: sticky;
+    top: 0px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: cyan;
+    justify-content: space-between;
+}
+
+#logo{
+    margin: 5px 34px;
+}
+
+#logo img{
+    height: 40px;
+    margin: 2px 6px;
+    border-radius: 50px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 1px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: black;
+    transition: all 0.5s ease;
+}
+#navbar label i{
+    display: none;
+}
+#click{
+    display: none;
+}
+
+/* hr */
+
+hr{
+    width: 70%;
+    margin: 5px auto;
+    border: 2px solid cyan;
+}
+
+h2{
+    
+    color: yellow;
+    width: 40rem;
+    font-size: 6rem;
+    margin: 2rem auto;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Gluten', cursive;
+    margin-top: 5rem;
+}
+
+/* home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1{
+    color:rgb(214, 185, 55);
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Ephesis';
+}
+
+#home p{
+    color:rgb(245, 220, 110);
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+}
+
+/* Profile */
+#prof{
+    display: flex;
+}
+#photo img{
+    height: 30rem;
+    width: 30rem;
+    margin: 2rem 2rem 2rem 3rem;
+    border-radius: 30rem;
+    border: 2px solid cyan;
+}
+#detail p{
+    color: rgb(235, 201, 93);
+    font-size: 3rem;
+    width: 30rem;
+    margin: 2rem;
+    font-family: 'Lobster', cursive;
+}
+
+/* About */
+
+
+#abt{
+    border: 4px solid cyan;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas:
+            'left right'
+            'bottom bottom'
+}
+#education{
+    grid-area: left;
+}
+#skills{
+    grid-area: right;
+}
+#summary{
+    grid-area: bottom;
+    color: rgb(235, 201, 93);
+    font-size: 2rem;
+    margin: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+    color: cyan;
+    font-size: 4rem;
+    font-family: 'Acme', sans-serif;
+}
+h4{
+    color: rgb(235, 201, 93);
+    font-size: 2.5rem;
+}
+li{
+    color: darkgoldenrod;
+    font-size: 2rem;
+    list-style: none;
+}
+.inst{
+    color: darkgoldenrod;
+    font-size: 2rem;
+}
+.yr{
+    color: rgb(235, 195, 95);
+    font-size: 2rem;
+    font-family: 'Explora', cursive;
+}
+
+/*Contact Me Section*/
+
+#cntct{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#cntct a i{
+    display: block;
+    color: aliceblue;
+    margin: 10px;
+}
+
+/*Go to top*/
+
+.top{
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+}
+.top a img{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 500px;
+    border: 2px solid cyan;
+}
+
+
+/*media Queries*/
+
+@media only screen and (max-width: 1090px){
+    
+    #prof{
+        flex-direction: column;
+    }
+    #photo img{
+        display: block;
+        height: 65%;
+        width: 65%;
+        margin: auto;
+    }
+    #detail p{
+        font-size: 3rem;
+        width: 90%;
+        text-align: center
+    }
+}
+@media only screen and (max-width: 768px){
+    #navbar{
+        flex-direction: column;
+    }
+    
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+    #prof{
+        flex-direction: column;
+    }
+    #photo img{
+        display: block;
+        height: 70%;
+        width: 70%;
+        margin: 1rem auto;
+
+    }
+    #detail p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2{
+        width: 75%;
+        font-size: 60px;
+        letter-spacing: 0px;
+    }
+    #abt{
+        border: 4px solid cyan;
+        margin: 1rem;
+        display: grid;
+        grid-template-areas:
+                'left'
+                'right'
+                'bottom';
+    }
+    #education{
+        margin: 2rem auto;
+    }
+    #skills{
+        margin: 2rem auto;
+    }    
+    #summary{
+        font-size: 25px;
+        margin: 1rem;
+    }   
+    h3{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 35px;
+    }
+    li{
+        font-size: 25px;
+    }
+    .inst{
+        font-size: 25px;
+    }
+    .yr{
+        font-size: 25px;
+    }     
+}
+
+@media only screen and (max-width: 576px){
+    #navbar{
+        flex-direction: row;
+    }
+    #navbar ul{
+        position: fixed;
+        top: 3rem;
+        left: -100%;
+        background-color: cyan;
+        opacity: 0.9;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    #click:checked ~ .menuBtn i::before{
+        content: "\f00d";
+    }
+    
+    #navbar ul li{
+        margin: 3rem 0;
+    }
+    #navbar ul li a{
+        font-size: 2rem;
+        display: block;
+    }
+    
+    #navbar label i{
+        display: block;
+        margin: 1rem;
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+    
+    #detail p{
+        width: 82%;
+    }
+
+    h2{
+        font-size: 40px;
+    }   
+    #summary{
+        font-size: 20px;
+    }   
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    li{
+        font-size: 20px;
+    }
+    .inst{
+        font-size: 20px;
+    }
+    .yr{
+        font-size: 20px;
+    } 
+    
+    .top a img{
+        width: 2rem;
+        height: 2rem;
+    }
+}
